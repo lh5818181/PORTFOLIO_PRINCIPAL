@@ -1,0 +1,16 @@
+@use 'variaveis';
+@use 'header';
+@use 'home';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: variaveis.$corDeFundoPrincipal;
+    color: variaveis.$corDoTextoPrincipal;
+}

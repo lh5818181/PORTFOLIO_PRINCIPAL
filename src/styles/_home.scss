@@ -1,0 +1,62 @@
+.home { 
+        margin-top: 46px;
+
+        &__container { // Container principal da seção
+        display: flex; // Usa flexbox para organizar o layout
+        justify-content: space-around; // Espaço igual entre os elementos
+        align-items: center; // Alinha os itens verticalmente no centro
+        max-width: 100%; // Largura máxima do container
+        margin: 0 auto; // Centraliza o container horizontalmente
+        padding: 20px; // Adiciona espaçamento interno
+    
+        &__paragrafo { // Estilo para o parágrafo dentro do container
+            flex: 1; // Permite que o parágrafo ocupe um espaço flexível
+            font-size: 18px; // Tamanho da fonte do parágrafo
+        }
+    
+        &__image { // Estilo para a imagem dentro do container
+            flex: 1; // Permite que a imagem ocupe um espaço flexível
+            max-width: 100%; // Largura máxima da imagem
+            height: auto; // Altura automática para manter a proporção
+            margin-left: 10px; // Espaçamento à esquerda da imagem
+        }
+        }
+    
+        &__container__buttons {
+            max-width: 1080px;
+            margin: 0 auto;
+            &__button { // Estilo para o botão dentro da seção
+            display: inline-block; // Exibe o botão como um bloco em linha
+            padding: 10px 20px; // Espaçamento interno do botão
+            background-color: #007bff; // Cor de fundo do botão
+            color: #fff; // Cor do texto do botão
+            border: none; // Remove a borda padrão do botão
+            border-radius: 5px; // Adiciona bordas arredondadas ao botão
+            cursor: pointer; // Muda o cursor para pointer ao passar sobre o botão
+            text-align: center; // Alinha o texto centralmente dentro do botão
+            text-decoration: none; // Remove a decoração de texto padrão
+            transition: background-color 0.3s; // Anima a mudança de cor de fundo
+        
+            &:hover { // Estilo para o botão ao passar o mouse
+                background-color: #0056b3; // Cor de fundo do botão ao passar o mouse
+            }
+            }
+        
+            &__list { // Estilo para a lista de links sociais
+            list-style: none; // Remove a estilização padrão da lista
+            display: flex; // Usa flexbox para organizar a lista
+            justify-content: center; // Centraliza os itens da lista
+            padding: 0; // Remove o padding padrão da lista
+            margin: 20px 0 0 0; // Margem superior da lista
+        
+            &__item { // Estilo para cada item da lista
+                margin: 0 10px; // Espaçamento entre os itens da lista
+        
+                & a img { // Estilo para as imagens dentro dos links
+                width: 30px; // Largura das imagens
+                height: 30px; // Altura das imagens
+                }
+            }
+            }
+        }
+    }
